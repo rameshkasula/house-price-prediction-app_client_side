@@ -23,7 +23,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function App() {
   const [location, setLocation] = React.useState("");
-
+  // check this
   const [price, setPrice] = React.useState();
 
   const [locationsList, setLocationsList] = React.useState([]);
