@@ -39,7 +39,7 @@ export default function App() {
 
   React.useEffect(() => {
     axios
-      .get("https://price-prediction-fukn.onrender.com/get_location_names")
+      .get("https://house-price-prediction-api-chi.vercel.app/get_location_names")
       .then((res) => {
         setLocationsList(res.data.locations);
       })
@@ -60,7 +60,7 @@ export default function App() {
 
     axios
       .post(
-        "https://price-prediction-fukn.onrender.com/predict_home_price",
+        "https://house-price-prediction-api-chi.vercel.app/predict_home_price",
         payload
       )
       .then((res) => {
